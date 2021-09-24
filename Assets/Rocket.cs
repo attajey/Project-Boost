@@ -6,12 +6,13 @@ using UnityEngine;
 public class Rocket : MonoBehaviour
 {
     Rigidbody rigidBody;
-
+    AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
         
     }
 
@@ -28,17 +29,28 @@ public class Rocket : MonoBehaviour
         {
             print("thrusting");
             rigidBody.AddRelativeForce(Vector3.up);
+            if (!audioSource.isPlaying) //so it doesnt layer
+            {
+                audioSource.Play();
+            }
         }
+        else if (audioSource.isPlaying)
+        {
+            audioSource.Stop();
+        }
+
+
+
         if (Input.GetKey(KeyCode.A))
         {
             print("Left");
-            rigidBody.AddRelativeForce(Vector3.left);
+            transform.Rotate(Vector3.forward);
 
         }
         else if (Input.GetKey(KeyCode.D))
         {
             print("right");
-            rigidBody.AddRelativeForce(Vector3.right);
+            transform.Rotate(-Vector3.forward);
 
         }
 
