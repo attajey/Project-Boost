@@ -133,3 +133,43 @@ Received Import Request.
 Start importing Assets/Terrain.prefab using Guid(c42fc5163a6cf40ed934cc2d8787a6ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5965215df244a3ddff958ab7386239f') in 0.031206 seconds
   Import took 0.037615 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 954.348165 seconds.
+  path: Assets/Ship Metal.mat
+  artifactKey: Guid(7bae9e0dfda3441d0b6593dcd73c1328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ship Metal.mat using Guid(7bae9e0dfda3441d0b6593dcd73c1328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6c9680e5412b0c997f12c5872c9b934') in 0.064405 seconds
+  Import took 0.094151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 326.831527 seconds.
+  path: Assets/Ship Metal.mat
+  artifactKey: Guid(7bae9e0dfda3441d0b6593dcd73c1328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ship Metal.mat using Guid(7bae9e0dfda3441d0b6593dcd73c1328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99cdcd87b5dd089d7735cf21b3eae349') in 0.034802 seconds
+  Import took 0.043372 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 651.534786 seconds.
+  path: Assets/Rocket Ship.prefab
+  artifactKey: Guid(e3e85ac8a7bb04b8893eb392008387b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocket Ship.prefab using Guid(e3e85ac8a7bb04b8893eb392008387b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b15dc13cf9590e9307d32bb25550291a') in 0.070610 seconds
+  Import took 0.075231 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 337.492122 seconds.
+  path: Assets/Nose Cone.mat
+  artifactKey: Guid(305ccf1f4d26e4df691d15651f7e276a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nose Cone.mat using Guid(305ccf1f4d26e4df691d15651f7e276a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db888336143dff441f460096d335f7cd') in 0.022587 seconds
+  Import took 0.029271 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 107.612463 seconds.
+  path: Assets/Nose Cone.mat
+  artifactKey: Guid(305ccf1f4d26e4df691d15651f7e276a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nose Cone.mat using Guid(305ccf1f4d26e4df691d15651f7e276a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb0861481131e42c863753ccd163201c') in 0.031495 seconds
+  Import took 0.038737 seconds .
+
