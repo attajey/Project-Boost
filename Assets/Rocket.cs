@@ -5,6 +5,7 @@ public class Rocket : MonoBehaviour
 {
     [SerializeField] float rcsThrust = 100f; // rcs stands for Reaction Control System which is used in rockets !
     [SerializeField] float mainThrust = 1000f;
+    [SerializeField] float levelLoadDelay = 2f;
     [SerializeField] AudioClip mainEngine;
     [SerializeField] AudioClip death;
     [SerializeField] AudioClip success;
@@ -62,7 +63,7 @@ public class Rocket : MonoBehaviour
         audioSource.Stop();
         audioSource.PlayOneShot(success);
         successParticles.Play();
-        Invoke("LoadNextLevel", 1f); //parameterize time
+        Invoke("LoadNextLevel", levelLoadDelay); 
     }
 
     private void StartDeathSequence()
@@ -71,7 +72,7 @@ public class Rocket : MonoBehaviour
         audioSource.Stop();
         audioSource.PlayOneShot(death);
         deathParticles.Play();
-        Invoke("LoadFirstLevel", 1f); //parameterize time
+        Invoke("LoadFirstLevel", levelLoadDelay); 
     }
 
 
