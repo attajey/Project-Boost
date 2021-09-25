@@ -199,6 +199,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 554083833, guid: e3e85ac8a7bb04b8893eb392008387b4, type: 3}
+      propertyPath: mainThrust
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 6319377293864605584, guid: e3e85ac8a7bb04b8893eb392008387b4, type: 3}
       propertyPath: m_Name
       value: Rocket Ship
@@ -400,7 +404,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1894390505572685265, guid: 5103d60818a654a519a3e5ec12037032, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.7
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 1894390505572685265, guid: 5103d60818a654a519a3e5ec12037032, type: 3}
       propertyPath: m_LocalRotation.w
