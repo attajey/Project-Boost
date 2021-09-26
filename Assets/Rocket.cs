@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -19,6 +20,8 @@ public class Rocket : MonoBehaviour
     enum State { Alive, Dying, Transcending};
     State state = State.Alive;
 
+    bool collisionDisabled = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,12 +40,31 @@ public class Rocket : MonoBehaviour
             RespondToRotateInput();
 
         }
+        // only if debug on
+        if (Debug.isDebugBuild)
+        {
+            RespondToDebugKeys();
+        }
 
+
+    }
+
+    private void RespondToDebugKeys()
+    {
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            LoadNextLevel();
+        }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            // toggle collision
+            collisionDisabled = !collisionDisabled;
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (state != State.Alive) { return; } //god condition, ignore collision when dead
+        if (state != State.Alive || collisionDisabled) { return; } //god condition, ignore collision when dead
 
         switch (collision.gameObject.tag)
         {
